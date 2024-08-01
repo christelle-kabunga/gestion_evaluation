@@ -1,0 +1,116 @@
+
+
+---
+
+# Gestion des Évaluations de Cours et Assistants - UAC
+
+## Description
+Ce projet est une application web développée en PHP pour gérer les évaluations des cours et des assistants à l'Université d'Assomptioniste du Congo (UAC). L'application permet aux étudiants d'évaluer leurs cours et assistants, et aux administrateurs de consulter les résultats des évaluations pour améliorer la qualité de l'enseignement.
+
+## Fonctionnalités
+
+- **Évaluation des Cours** : Les étudiants peuvent évaluer les cours qu'ils suivent.
+- **Évaluation des Assistants** : Les étudiants peuvent évaluer les assistants de cours.
+- **Consultation des Résultats** : Les administrateurs peuvent consulter les résultats des évaluations.
+- **Gestion des Utilisateurs** : Ajout, modification et suppression des étudiants, des cours, et des assistants.
+
+## Installation
+
+### Prérequis
+
+- Serveur web (Apache, Nginx, etc.)
+- PHP 7.4 ou supérieur
+- Base de données MySQL
+
+### Étapes d'installation
+
+1. **Cloner le dépôt**
+
+   ```bash
+   git clone https://github.com/votre-utilisateur/votre-repo.git
+   cd votre-repo
+   ```
+
+2. **Configurer la base de données**
+
+   Créez une base de données MySQL et importez le fichier `database.sql` situé dans le dossier `sql` pour créer les tables nécessaires.
+
+   ```sql
+   CREATE DATABASE uac_evaluation;
+   USE uac_evaluation;
+   SOURCE sql/database.sql;
+   ```
+
+3. **Configurer le fichier `.env`**
+
+   Renommez le fichier `.env.example` en `.env` et modifiez-le pour y ajouter vos informations de configuration de la base de données.
+
+   ```env
+   DB_HOST=localhost
+   DB_NAME=uac_evaluation
+   DB_USER=root
+   DB_PASS=votre-mot-de-passe
+   ```
+
+4. **Installer les dépendances**
+
+   Si vous utilisez Composer pour la gestion des dépendances PHP, exécutez la commande suivante :
+
+   ```bash
+   composer install
+   ```
+
+5. **Démarrer le serveur web**
+
+   Assurez-vous que votre serveur web est configuré pour pointer vers le dossier du projet. Vous pouvez également utiliser le serveur intégré de PHP pour les tests :
+
+   ```bash
+   php -S localhost:8000
+   ```
+
+6. **Accéder à l'application**
+
+   Ouvrez votre navigateur et allez à l'adresse suivante :
+
+   ```
+   http://localhost:8000
+   ```
+
+## Utilisation
+
+### Pour les étudiants
+
+1. **Connexion** : Utilisez votre identifiant étudiant et votre mot de passe pour vous connecter.
+2. **Évaluer un cours** : Sélectionnez un cours à partir de la liste des cours disponibles et remplissez le formulaire d'évaluation.
+3. **Évaluer un assistant** : Sélectionnez un assistant de cours et remplissez le formulaire d'évaluation.
+
+### Pour les administrateurs
+
+1. **Connexion** : Utilisez vos identifiants administrateur pour vous connecter.
+2. **Consultation des évaluations** : Accédez à la section des résultats pour voir les évaluations des cours et des assistants.
+3. **Gestion des utilisateurs** : Ajoutez, modifiez ou supprimez des étudiants, des cours, et des assistants.
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer, veuillez suivre les étapes suivantes :
+
+1. **Fork** le dépôt
+2. **Créer** une branche feature (`git checkout -b feature/AmazingFeature`)
+3. **Commit** vos modifications (`git commit -m 'Add some AmazingFeature'`)
+4. **Push** à la branche (`git push origin feature/AmazingFeature`)
+5. **Ouvrir** une Pull Request
+
+## License
+
+Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
+
+## Contact
+
+Pour toute question, veuillez contacter :
+
+- **Nom** : Votre Nom
+- **Email** : votre.email@exemple.com
+- **Téléphone** : +229 90 00 00 00
+
+---
+
